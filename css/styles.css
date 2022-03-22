@@ -1,0 +1,57 @@
+body{
+    text-align: center;
+    background-color: #b3d1ff;
+    color: navy;
+}
+#fakebookHeading{
+    font-size: 1.5em;
+    padding: 5px;
+    color: navy;
+    text-align: center;
+    box-shadow: 3px 2px 5px navy;
+    background-color: #b3d1ca;
+}
+#searchInput{
+    margin: 10px 10px;
+    padding: 5px;
+    border: none;
+    box-shadow: 3px 2px 5px navy;
+}
+#searchDiv{
+    color: navy;
+    padding: 10px;
+    border: none;
+    box-shadow: 3px 2px 5px navy;
+    text-decoration: underline wavy purple;
+}
+#nameHeading{
+    background-color: #b3d1ca;
+    box-shadow: 5px 4px 6px navy;
+    padding: 10px;
+    color: navy;
+}
+#profileImage{
+    width: 300px;
+    border: 2px solid navy;
+    border-radius: 50%;
+    box-shadow: 3px 10px 10px gray;
+}
+
+#addFriendButton{
+    background-color: #005ce6;
+    color:white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 3px 2px 5px navy;
+    margin-bottom: 2em;
+}
+#addFriendButton:hover{
+    cursor: pointer;
+    background-color: #e6f0ff;
+    color: #005ce6;
+    box-shadow: 3px 2px 5px grey;
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
