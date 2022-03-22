@@ -1,0 +1,139 @@
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-div {
+  display: flex;
+  flex: 2;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 100px;
+}
+
+.navbar-items a {
+  display: inline-block;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px;
+  line-height: 24px;
+  vertical-align: center;
+}
+.navbar-items a:hover {
+  color: #0077ff;
+  text-decoration: underline;
+}
+.dots{
+    width:24px;
+    height:24px;
+    fill: lightslategrey;
+
+}
+.loginBtn{
+    text-align: center;
+    vertical-align: center;
+    background-color: #4285f4;
+    cursor:pointer;
+    border:none;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+.loginBtn:hover{
+    background-color: #4285a4;
+    box-shadow: 5px 3px 5px navy;
+    border-radius: 3px;
+}
+
+#googleImg{
+    width: 272px;
+    height: 92px;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+  fill: lightslategrey;
+}
+
+#searchInputForm {
+  display: flex;
+  flex: 1;
+  margin: 18px auto;
+  width: 638px;
+  height: 44px;
+  flex-wrap: wrap;
+  padding: 5px 8px 0 14px;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  color: #202124;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+  z-index: 3;
+  background: #fff;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+}
+
+#searchInput {
+  display: flex;
+  flex: 1;
+  height: 38px;
+  border: none;
+  flex-wrap: wrap;
+  border-radius: 24px;
+  outline-style: none;
+}
+
+.inputBtn {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.inputBtn:hover {
+  border-color: #867e7e;
+}
+
+#footer {
+  margin-top: 17rem;
+}
+#footer .onLeft {
+  float: left;
+  margin: 12px;
+  list-style-type: none;
+}
+#footer .onLeft a {
+  text-decoration: none;
+  color: black;
+}
+#footer .onRight {
+  float: right;
+  margin: 12px;
+  list-style-type: none;
+}
+#footer .onRight a {
+  text-decoration: none;
+  color: black;
+}
+#footer a:hover{
+    text-decoration: underline;
+}
