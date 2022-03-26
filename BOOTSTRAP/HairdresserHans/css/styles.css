@@ -1,0 +1,83 @@
+body {
+    background-color: bisque;
+    font-family: "Roboto";
+}
+
+.galerija {
+    width: 50vw;
+}
+
+.carousel-item>img {
+    width: 500px;
+}
+
+.carousel-control-prev {
+    color: black;
+}
+
+.navbar {
+    background-color: burlywood;
+    height: 70px;
+}
+
+.nav-item>a {
+    color: rgb(56, 33, 25);
+}
+
+.nav-item>a:hover {
+    color: rgb(0, 0, 0);
+    background-color: bisque;
+    box-shadow: 3px 2px 3px grey;
+    border-radius: 5px;
+}
+
+.stylingIcon>img {
+    float: right;
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+#date {
+    border: 1px solid gainsboro;
+    border-radius: 8px 5px 8px 5px;
+}
+
+#date::placeholder {
+    color: rgb(172, 170, 170);
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table>thead {
+    background-color: burlywood;
+    border-bottom: 3px solid black;
+}
+
+.table th {
+    border-top: 1px solid black;
+}
+
+.center {
+    text-align: center;
+}
+
+.accordion>.card {
+    background-color: wheat;
+    color: black;
+}
+
+.btn-link {
+    color: brown;
+}
+
+.navigationLinks {
+    color: brown;
+}
+
+html {
+    scroll-behavior: smooth;
+}
