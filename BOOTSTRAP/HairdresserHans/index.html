@@ -24,13 +24,19 @@
 <body>
 
 
-    <nav class="navbar fixed-top navbar-expand-lg">
-        <a class="navbar-brand col-lg-5" href="#"><img src="img/hiška lepote.png" alt="" width="75pxg"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#"><img src="img/hiška lepote.png" alt="" width="56px" height="56px"></a>
+        <!-- Collapse button -->
+        <button class="d-flex navbar-toggler toggler-example d-lg-none" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="dark-blue-text"><i
+                    class="fas fa-bars fa-1x"></i></span></button>
+        <!-- Collapsible content -->
+        <div class="d-flex-lg d-flex-md justify-content-lg-end justify-items-lg-evenly collapse navbar-collapse"
+            id="navbarSupportedContent1">
+            <!-- Links -->
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link " href="#services">Our Services</a>
@@ -49,10 +55,10 @@
                     </a>
                 </li>
                 <form class="form-inline my-1 my-lg-1">
-                    <input class="form-control mr-sm-2 ml-lg-5" type="search" placeholder="Search" aria-label="Search">
+                    <input class="searchField form-control mr-sm-2 ml-lg-5" type="search" placeholder="Search"
+                        aria-label="Search">
                 </form>
             </ul>
-
         </div>
     </nav>
 
@@ -127,7 +133,7 @@
         <div class="container">
             <h1 class="my-5 center">Our Services</h1>
             <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="center col-lg-4 col-md-6 mb-4">
                     <div class="card mx-auto" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">Styling <span class="stylingIcon"><img src="img/hairStylingIcon.webp"
@@ -184,7 +190,7 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="form-group"><textarea id="otherInfo" rows="7" cols="62"
+                            <div class="form-group" w-100><textarea id="otherInfo" rows="7" cols="50"
                                     placeholder="Other informations(haircut wishes...)"></textarea></div>
                         </div>
                         <div class="form-row">
@@ -196,7 +202,7 @@
                                 is the best friseur</label>
                         </div>
                         <button type="submit" class="btn btn-primary my-2">Send</button>
-                    </form>
+                    </form><br>
                 </div>
                 <div class="col-lg-6">
                     <table class="table">
@@ -310,7 +316,7 @@
     <hr>
     <section>
         <div class="container my-5">
-            <div class="row">
+            <div class="row d-flex justify-content-center">
                 <div class="col-lg-4 col-md-6 center">
                     <h1 class="mb-3">Contact</h1>
                     <p>Hiška lepote s.p.</p>
@@ -322,7 +328,7 @@
                 <div class="col-lg-4 col-md-6 center">
                     <img src="img/hiška lepote.png" alt="" width="250px">
                 </div>
-                <div class="col-lg-4 col-md-6 center">
+                <div class="col-lg-4 col-md-6 my-5 center">
                     <h1 class="mb-3">Navigation</h1>
                     <a href="#services" class="navigationLinks">Our Services</a><br>
                     <a href="#appointment" class="navigationLinks">Make an appointment</a><br>

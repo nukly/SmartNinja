@@ -17,11 +17,12 @@ body {
 
 .navbar {
     background-color: burlywood;
-    height: 70px;
+    height: 80px;
 }
 
 .nav-item>a {
     color: rgb(56, 33, 25);
+    background-color: burlywood;
 }
 
 .nav-item>a:hover {
@@ -80,4 +81,17 @@ table>thead {
 
 html {
     scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-item>a:hover {
+        color: rgb(0, 0, 0);
+        box-shadow: 3px 2px 3px grey;
+        border-radius: 5px;
+    }
+
+    .nav-item .nav-link {
+        display: flex;
+        justify-content: center;
+    }
 }
