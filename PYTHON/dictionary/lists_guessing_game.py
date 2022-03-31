@@ -6,9 +6,11 @@ current_time = datetime.datetime.now()
 
 secret = random.randint(1, 30)
 attempts = 0
+wrong_guesses = 0
 username = input("Enter name to play guessing game: ")
 
-score_data = {"username": username, "attempts": attempts, "date": datetime.datetime.now, "secret_number": secret}
+score_data = {"username": username, "attempts": attempts, "date": datetime.datetime.now, "secret_number": secret,
+              "wrong_guesses": wrong_guesses}
 
 with open("score_list.json", "r") as score_file:
     score_list = json.loads(score_file.read())
@@ -20,7 +22,7 @@ while True:
 
     if guess == secret:
         score_list.append({"username:": username, "attempts": attempts, "date": str(datetime.datetime.now()),
-                           "secret_number": secret})
+                           "secret_number": secret, "wrong_guesses": wrong_guesses})
         print("You've guessed it - congratulations! It's number " + str(secret))
         with open("score_list.json", "w") as score_file:
             score_file.write(json.dumps(score_list))
@@ -29,5 +31,8 @@ while True:
         break
     elif guess > secret:
         print("Your guess is not correct... try something smaller")
+        wrong_guesses += 1
     elif guess < secret:
         print("Your guess is not correct... try something bigger")
+        wrong_guesses += 1
+
