@@ -25,8 +25,7 @@ while True:
         with open("score_list.json", "w") as score_file:
             score_file.write(json.dumps(score_list))
             for score_dict in score_list:
-                print(str("username:" + score_dict["username"] + ", " + score_dict["attempts"] +
-                          "attempts, date: " + score_dict["date"] + score_dict["secret_number"]))
+                print(str(score_dict))
         break
     elif guess > secret:
         print("Your guess is not correct... try something smaller")
