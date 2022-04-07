@@ -27,7 +27,9 @@ while True:
         with open("score_list.json", "w") as score_file:
             score_file.write(json.dumps(score_list))
             for score_dict in score_list:
-                print(str(score_dict))
+                sorted_score_dict = sorted(score_dict.items())
+                new_score_list = sorted(score_list, key=lambda k: k['attempts'])[:3]
+            print(new_score_list)
         break
     elif guess > secret:
         print("Your guess is not correct... try something smaller")
